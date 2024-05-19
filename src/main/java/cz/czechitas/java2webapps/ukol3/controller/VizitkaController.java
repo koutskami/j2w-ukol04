@@ -43,7 +43,7 @@ public class VizitkaController {
     public ModelAndView append(Vizitka vizitka) {
         service.append(vizitka);
 
-        ModelAndView result = new ModelAndView("seznam");
+        ModelAndView result = new ModelAndView("nova");
         result.addObject("seznamVizitek", service.getAll());
         return result;
     }

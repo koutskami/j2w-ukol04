@@ -50,6 +50,20 @@ a {
     align-items: center;
 }
 
+.vizitka--formular {
+    width: 30em;
+    height: 30em;
+    border: 1px solid gray;
+    background-color: white;
+    margin: 1em;
+    padding: 1.5em;
+    box-shadow: 5px 5px 10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
 a:hover .vizitka {
     box-shadow: 10px 10px 10px black;
     transform: translate(-5px, -5px);
