@@ -40,11 +40,11 @@ public class VizitkaController {
     }
 
     @PostMapping("/nova")
-    public ModelAndView append(Vizitka vizitka) {
+    public String append(Vizitka vizitka) {
         service.append(vizitka);
 
         ModelAndView result = new ModelAndView("nova");
         result.addObject("seznamVizitek", service.getAll());
-        return result;
+        return "redirect:/";
     }
 }
