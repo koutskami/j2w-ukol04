@@ -6,11 +6,11 @@
 </head>
 <body>
 <div class="detail">
-    [#list vizitka as vizitka]
     <div class="vizitka">
+
         <form method="post" action="/delete">
             <div><button type="submit">Smazat</button></div>
-            <input type="hidden" name="id" value="${vizitka?index}"/>
+            <input type="hidden" name="id" value="0"/>
         </form>
 
         <div class="jmeno">[#if vizitka.jmeno??]${vizitka.jmeno}[#else]<em>neuvedeno</em>[/#if]</div>
@@ -26,7 +26,6 @@
                 <div><i class="bi bi-globe"></i> [#if vizitka.web??]${vizitka.web}[#else]<em>neuvedeno</em>[/#if]</div>
             </div>
         </div>
-        [/#list]
     </div>
 
     <div class="mapa">
