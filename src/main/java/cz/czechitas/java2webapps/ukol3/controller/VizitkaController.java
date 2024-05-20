@@ -47,4 +47,10 @@ public class VizitkaController {
         result.addObject("seznamVizitek", service.getAll());
         return "redirect:/";
     }
+
+    @PostMapping("/delete")
+    public String delete(int id) {
+        service.deleteById(id);
+        return "redirect:/";
+    }
 }
