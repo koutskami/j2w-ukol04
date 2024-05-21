@@ -10,7 +10,7 @@
 
         <form method="post" action="/delete">
             <div><button type="submit">Smazat</button></div>
-            <!--<input type="hidden" name="id" value="0"/>-->
+            <input type="hidden" name="id" value="0"/>
         </form>
 
         <div class="jmeno">[#if vizitka.jmeno??]${vizitka.jmeno}[#else]<em>neuvedeno</em>[/#if]</div>
